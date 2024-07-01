@@ -1,4 +1,3 @@
-import zipfile
 from compress import compress
 from decompress import decompress
 def zipthatfile():
@@ -16,7 +15,7 @@ def zipthatfile():
 8: Super compression (best possible compression, slowest execution)
 9: Superior compression (best possible compression, slowest execution)
                      """))
-    compress(level=level, filename=filetoget, outputname="Outputzip.zip", filewrite="a")
+    compress(level=level, filename=filetoget, outputname="Outputzip.zip")
 def unzipthatfile():
     filetoget = input("Enter file name to decompress: ")
-    decompress(filename=filetoget, outputname="Outputzip.zip", filewrite="a")
+    decompress(filename=filetoget, outputfile="Outputfile.txt")
